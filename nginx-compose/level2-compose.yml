@@ -1,0 +1,7 @@
+services:
+  one:
+    image: nginx
+    container_name: level2_nginx
+    ports:
+      - "8081:80"
+    restart: unless-stopped

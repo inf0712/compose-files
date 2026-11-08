@@ -1,0 +1,11 @@
+services:
+  threeB:
+    image: nginx
+    container_name: level3B
+    ports:
+      - "8083:80"
+    volumes:
+      - disk:/usr/share/nginx/html
+
+volumes:
+  disk:

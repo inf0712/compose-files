@@ -1,0 +1,10 @@
+services:
+  three:
+    image: nginx
+    container_name: level3-nginx
+    ports:
+      - "8082:80" 
+    volumes: 
+      - ./level3:/usr/share/nginx/html
+      
+
