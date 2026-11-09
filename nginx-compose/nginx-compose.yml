@@ -1,0 +1,17 @@
+services:
+  web:
+    build: ./nginx
+    container_name: con1
+    ports:
+      - "1999:80"
+    networks:
+      - mng-net
+    volumes:
+      - hard:/usr/share/nginx/html
+
+networks:
+  mng-net:
+      driver: bridge
+
+volumes:
+  hard:
